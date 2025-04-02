@@ -21,17 +21,6 @@ Achieves 91.96% accuracy on English texts. [Read the paper](paper_link_placehold
 - T5 Models: Pre-trained models for ciphertext → plaintext/alphabet prediction
 - Correction Pipeline: Multi-step correction system (model + algorithm)
 - Benchmark Tools: Evaluate models on custom ciphers
-- Datasets: 380K+ encrypted English sentences for training
-
----
-
-Requirements:
-- Python 3.8+
-- PyTorch 2.0+
-- Hugging Face Transformers
-- Numpy
-- NLTK
-
 ---
 
 ## 🧠 Models
