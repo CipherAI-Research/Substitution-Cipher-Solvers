@@ -16,6 +16,12 @@ This work explores transformer-based cryptanalysis of monoalphabetic substitutio
 Achieves 91.96% accuracy on English texts. [Read the paper](paper_link_placeholder).
 
 ---
+## Requirements
+- transformers
+- python-Levenshtein
+- datasets
+- torch
+- pandas
 
 ## 🚀 Key Features
 - T5 Models: Pre-trained models for ciphertext → plaintext/alphabet prediction
@@ -28,9 +34,9 @@ Achieves 91.96% accuracy on English texts. [Read the paper](paper_link_placehold
 ### Available Models
 | Model Type              | Hugging Face ID                          |
 |-------------------------|------------------------------------------|
-| Alphabet Prediction     | CipherAI/t5-base-substitution-alphabet   |
-| Plaintext Prediction    | CipherAI/t5-base-substitution-plaintext  |
-| Correction Model        | CipherAI/t5-base-cipher-corrector        |
+| Alphabet Prediction     | Cipher-AI/Substitution-Cipher-Alphabet-Eng   |
+| Plaintext Prediction    | Cipher-AI/Substitution-Cipher-Text-Eng  |
+| Correction Model        | Cipher-AI/AutoCorrect-EN-v2        |
 
 ---
 
