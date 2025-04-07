@@ -4,12 +4,10 @@ from string import ascii_lowercase
 import Levenshtein
 import random
 
-tokenizer = AutoTokenizer.from_pretrained("Cipher-AI/Substitution-Cipher-Alphabet-Eng")
-model = AutoModelForSeq2SeqLM.from_pretrained("Cipher-AI/Substitution-Cipher-Alphabet-Eng")
-
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
-alphabet_model = model.to(device)
+tokenizer = AutoTokenizer.from_pretrained("Cipher-AI/Substitution-Cipher-Alphabet-Eng")
+alphabet_model = AutoModelForSeq2SeqLM.from_pretrained("Cipher-AI/Substitution-Cipher-Alphabet-Eng").to(device)
 correction_model = AutoModelForSeq2SeqLM.from_pretrained("Cipher-AI/AutoCorrect-EN-v2").to(device)
 
 def similarity_percentage(s1, s2):
