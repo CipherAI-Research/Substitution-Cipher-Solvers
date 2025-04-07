@@ -162,8 +162,9 @@ def crack_sub(cipher_text):
   decoded = decode(cipher_text, output)
   second_pass = model_pass(correction_model, decoded, len(decoded))
   second_text = correct_text(cipher_text, second_pass)
+  third_pass = model_pass(correction_model, second_text, len(decoded))
 
-  return second_text
+  return third_pass
 
 """
 Use crack_sub() function to solve monoalphabetic substitution ciphers!
